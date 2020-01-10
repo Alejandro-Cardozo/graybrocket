@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>GrayBrocket | Bienvenido</title>
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/colorful_logo.png" />
 
@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto nav-pills text-center">
             <li class="nav-item px-2">
-              <a class="nav-link px-2 active" href="#section0">Home</a>
+              <a class="nav-link px-2" href="#section0">Home</a>
             </li>
             <li class="nav-item px-2">
               <a class="nav-link px-2" href="#section1">Icons</a>
@@ -131,7 +131,7 @@
             class="col-12 col-sm-12 col-md-12 col-lg-5 text-center d-flex align-items-center"
             style="height: 70vh;"
           >
-            <img src="img/guzuguasol.jpg" alt="Guazuncho" class="img-fluid" />
+            <img src="img/guzuguasun.jpg" alt="Guazuncho" class="img-fluid" />
           </div>
           <div
             class="col-12 col-sm-12 col-md-12 col-lg-7 pb-md-5 pb-sm-5 pb-5 text-lg-left text-md-center text-sm-center text-center text-light align-self-center"
@@ -259,5 +259,11 @@
 
     <!-- Customized JS -->
     <script src="js/costume.min.js"></script>
+
+    <script>
+      $(".navbar-nav>li>a").on("click", function() {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
   </body>
 </html>
