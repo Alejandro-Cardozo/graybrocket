@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>GrayBrocket | Bienvenido</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/colorful_logo.png" />
-
     <!-- Font awesome -->
     <link
       rel="stylesheet"
@@ -16,19 +13,21 @@
     />
 
     <!-- Bootstrap 4 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
 
     <!-- customized css file -->
-    <link rel="stylesheet" href="css/costume.min.css" />
+    <link rel="stylesheet" href="/css/costume.css" />
   </head>
   <body data-spy="scroll" data-target="#header">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark" id="header">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="img/colorful_logo.png" alt="GrayBrocket Logo" id="logo" />
+          <img src="/img/colorful_logo.png" alt="GrayBrocket Logo" id="logo" />
         </a>
-        <a class="navbar-brand font-weight-bold" href="#">GrayBrocket</a>
+        <a class="navbar-brand font-weight-bold d-none d-sm-block" href="#"
+          >GrayBrocket</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -43,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto nav-pills text-center">
             <li class="nav-item px-2">
-              <a class="nav-link px-2" href="#section0">Home</a>
+              <a class="nav-link px-2 active" href="#section0">Home</a>
             </li>
             <li class="nav-item px-2">
               <a class="nav-link px-2" href="#section1">Icons</a>
@@ -62,66 +61,108 @@
 
     <!-- Welcome parallax image -->
     <section
-      class="parallax-window"
+      id="section0"
+      class="parallax-window slider d-flex flex-column justify-content-center align-items-center"
       data-parallax="scroll"
-      data-image-src="img/test.JPG"
+      data-image-src="/img/test.JPG"
     >
-      <div class="jumbotron" id="section0">
-        <div class="mt-5 container text-light text-center center">
-          <div class="my-5">
-            <h1 class="shadow-text">
-              <b>Hello, visitor!</b>
-            </h1>
-            <h3 class="shadow-text">
-              This is a bootstrap based template
-            </h3>
-          </div>
-          <p class="shadow-text">
-            This template was created by codefulnito
-          </p>
+      <div class="container text-light text-center center">
+        <div class="">
+          <h1 class="shadow-text mb-5">
+            <b>Hola, amigo de la naturaleza</b>
+          </h1>
+          <h5 class="shadow-text d-none d-sm-block">
+            ¿Sabias que el <u>guazuncho</u> fue declarado
+            <u> Monumento Natural de Entre Ríos </u>?
+          </h5>
+        </div>
+        <h6 class="shadow-text d-none d-sm-block">
+          Para celebrarlo hemos decidido crear una pagina web exclusiva para
+          nuestro ciervo preferido!
+        </h6>
 
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mx-auto">
-            <a
-              href="http://codefulanito.com"
-              class="btn btn-sm animated-button boton"
-              >Learn more</a
-            >
-          </div>
+        <div
+          class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mx-auto d-none d-sm-block"
+        >
+          <a
+            href="http://noticias.entrerios.gov.ar/notas/la-corzuela-o-guazuncho-fue-declarado-monumento-natural-de-entre-ros.htm"
+            class="btn btn-sm animated-button boton"
+            target="_blank"
+            >Ver Noticia</a
+          >
         </div>
       </div>
     </section>
     <!-- End welcome parallax image -->
 
-    <!-- Icons section -->
-    <section class="section-one" id="section1">
-      <div class="container d-flex align-items-center" style="height: 50vh;">
-        <div class="row text-center">
-          <div class="col-4">
-            <i class="fa faz fa-pagelines mb-2" aria-hidden="true"></i>
-            <h4><b>NATURE</b></h4>
-            <p class="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+    <!-- Info section -->
+    <section
+      class="section-one d-flex justify-content-center align-items-center"
+      id="section1"
+    >
+      <div class="container my-5 py-5">
+        <div class="text-center">
+          <h2 class="my-4" style="color:#95afc0; letter-spacing: 0.8vw;">
+            <strong>CARACTERISTICAS</strong>
+          </h2>
+        </div>
+        <hr class="style-secondary mb-5" />
+        <div class="row d-flex align-items-center">
+          <div class="col-4 d-none d-md-block">
+            <img src="/img/guazu.png" alt="guazuncho" class="img-fluid" />
           </div>
-          <div class="col-4">
-            <i class="fa faz fa-leaf mb-2" aria-hidden="true"></i>
-
-            <h4><b>COUNTRYSIDE</b></h4>
-            <p class="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div class="col-4">
-            <i class="fa faz fa-tree mb-2" aria-hidden="true"></i>
-            <h4><b>WOODS</b></h4>
-            <p class="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+          <div class="col-sm-12 col-md-8">
+            <div class="card">
+              <div class="card-body text-center">
+                <h4 class="card-title">Corzuela Parda</h4>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Mazama gouazoubirae
+                </h6>
+                <img
+                  style="height: 200px; width: 100%; display: block;"
+                  src="/img/guazu.png"
+                  alt="Card image"
+                  class="d-md-none"
+                />
+                <div class="row my-4">
+                  <div class="col-12 col-md-6">
+                    <ul class="px-1">
+                      <li class="list-group-item"><b>Reino:</b> Animalia</li>
+                      <li class="list-group-item"><b>Filo:</b> Chordata</li>
+                      <li class="list-group-item"><b>Clase:</b> Mammalia</li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <ul class="px-1">
+                      <li class="list-group-item">
+                        <b>Orden:</b> Artiodactyla
+                      </li>
+                      <li class="list-group-item"><b>Familia:</b> Cervidae</li>
+                      <li class="list-group-item"><b>Género:</b> Mazama</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Reino: Animalia</li>
+                  <li class="list-group-item">Filo: Chordata</li>
+                  <li class="list-group-item">Clase: Mammalia</li>
+                  <li class="list-group-item">Orden: Artiodactyla</li>
+                  <li class="list-group-item">Familia: Cervidae</li>
+                  <li class="list-group-item">Género: Mazama</li>
+                </ul> -->
+                <a
+                  href="https://es.wikipedia.org/wiki/Mazama_gouazoubira"
+                  target="_blank"
+                  class="card-link"
+                  >Ver ficha completa</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End icons section -->
+    <!-- End Info section -->
 
     <!-- Picture section -->
     <section class="section-two" id="section2">
@@ -254,16 +295,10 @@
     <!-- Parallax  -->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script>
-      $(".parallax-window").parallax({ imageSrc: "img/test.JPG" });
+      $(".parallax-window").parallax({ imageSrc: "/img/test.JPG" });
     </script>
 
     <!-- Customized JS -->
-    <script src="js/costume.min.js"></script>
-
-    <script>
-      $(".navbar-nav>li>a").on("click", function() {
-        $(".navbar-collapse").collapse("hide");
-      });
-    </script>
+    <script src="/js/costume.min.js"></script>
   </body>
 </html>
