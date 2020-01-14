@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Página web dedicada a la corzuela parda sin fines de lucro"/>
+    <meta name="keywords" content="corzuela parda, guazuncho, guazu, veado catingueiro, gray brocket, deer, naturaleza, natureza, nature, argentina, eco"/>
+    <meta name="author" content="Elias cardozo" />
+    <meta name="copyright" content="www.codefulanito.com" />
+    <meta name="robots" content="follow"/>
+
     <title>GrayBrocket | Bienvenido</title>
+
+    <!-- Favicon -->
+    <link rel="icon" 
+    type="image/png" 
+    href="/img/colorful_logo.png">
 
     <!-- Font awesome -->
     <link
@@ -15,17 +27,24 @@
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
 
+    <!-- Gallery css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Raleway&display=swap" rel="stylesheet"> 
+
     <!-- customized css file -->
-    <link rel="stylesheet" href="/css/costume.css" />
+    <link rel="stylesheet" href="/css/costume.min.css" />
+
   </head>
   <body data-spy="scroll" data-target="#header">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark" id="header">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src="/img/colorful_logo.png" alt="GrayBrocket Logo" id="logo" />
         </a>
-        <a class="navbar-brand font-weight-bold d-none d-sm-block" href="#"
+        <a class="navbar-brand font-weight-bold d-none d-sm-block" href="/"
           >GrayBrocket</a
         >
         <button
@@ -42,16 +61,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto nav-pills text-center">
             <li class="nav-item px-2">
-              <a class="nav-link px-2 active" href="#section0">Home</a>
+              <a class="nav-link px-2" href="#home">Inicio</a>
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link px-2" href="#section1">Icons</a>
+              <a class="nav-link px-2" href="#info">Info</a>
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link" href="#section2">Picture</a>
+              <a class="nav-link" href="#map">Mapa</a>
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link" href="#section3">Video</a>
+              <a class="nav-link" href="#gallery">Fotos</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#videos">Videos</a>
             </li>
           </ul>
         </div>
@@ -61,7 +83,7 @@
 
     <!-- Welcome parallax image -->
     <section
-      id="section0"
+      id="home"
       class="parallax-window slider d-flex flex-column justify-content-center align-items-center"
       data-parallax="scroll"
       data-image-src="/img/test.JPG"
@@ -69,15 +91,17 @@
       <div class="container text-light text-center center">
         <div class="">
           <h1 class="shadow-text mb-5">
-            <b>Hola, amigo de la naturaleza</b>
+            <b class="d-none d-sm-block">Hola, amigo de la naturaleza</b>
+            <b class="d-sm-none">Bienvenido a Greybrocket</b>
           </h1>
           <h5 class="shadow-text d-none d-sm-block">
-            ¿Sabias que el <u>guazuncho</u> fue declarado
+            ¿Sabías que el <u>guazuncho</u> fue declarado
             <u> Monumento Natural de Entre Ríos </u>?
           </h5>
+          <h5 class="shadow-text d-sm-none">El sitio oficial de la Corzuela Parda</h5>
         </div>
         <h6 class="shadow-text d-none d-sm-block">
-          Para celebrarlo hemos decidido crear una pagina web exclusiva para
+          Para celebrarlo hemos decidido crear una página web exclusiva para
           nuestro ciervo preferido!
         </h6>
 
@@ -98,20 +122,20 @@
     <!-- Info section -->
     <section
       class="section-one d-flex justify-content-center align-items-center"
-      id="section1"
+      id="info"
     >
       <div class="container my-5 py-5">
         <div class="text-center">
-          <h2 class="my-4" style="color:#95afc0; letter-spacing: 0.8vw;">
+          <h2 class="my-4 section-title">
             <strong>CARACTERISTICAS</strong>
           </h2>
         </div>
         <hr class="style-secondary mb-5" />
         <div class="row d-flex align-items-center">
-          <div class="col-4 d-none d-md-block">
+          <div class="col-6 d-none d-md-block">
             <img src="/img/guazu.png" alt="guazuncho" class="img-fluid" />
           </div>
-          <div class="col-sm-12 col-md-8">
+          <div class="col-sm-12 col-md-6">
             <div class="card">
               <div class="card-body text-center">
                 <h4 class="card-title">Corzuela Parda</h4>
@@ -142,19 +166,11 @@
                     </ul>
                   </div>
                 </div>
-                <!-- <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Reino: Animalia</li>
-                  <li class="list-group-item">Filo: Chordata</li>
-                  <li class="list-group-item">Clase: Mammalia</li>
-                  <li class="list-group-item">Orden: Artiodactyla</li>
-                  <li class="list-group-item">Familia: Cervidae</li>
-                  <li class="list-group-item">Género: Mazama</li>
-                </ul> -->
                 <a
                   href="https://es.wikipedia.org/wiki/Mazama_gouazoubira"
                   target="_blank"
-                  class="card-link"
-                  >Ver ficha completa</a
+                  class="btn btn-sm animated-button botonazo"
+                  >Mas info</a
                 >
               </div>
             </div>
@@ -164,57 +180,102 @@
     </section>
     <!-- End Info section -->
 
-    <!-- Picture section -->
-    <section class="section-two" id="section2">
-      <div class="container-fluid">
-        <div class="row">
-          <div
-            class="col-12 col-sm-12 col-md-12 col-lg-5 text-center d-flex align-items-center"
-            style="height: 70vh;"
-          >
-            <img src="img/guzuguasun.jpg" alt="Guazuncho" class="img-fluid" />
+    <!-- Map section -->
+    <section
+      class="section-two d-flex justify-content-center align-items-center"
+      id="map"
+    >
+      <div class="container-fluid my-5 py-5">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="my-4 section-title-white">
+              <strong>AVISTAMIENTOS</strong>
+            </h2>
           </div>
-          <div
-            class="col-12 col-sm-12 col-md-12 col-lg-7 pb-md-5 pb-sm-5 pb-5 text-lg-left text-md-center text-sm-center text-center text-light align-self-center"
-          >
-            <h3>
-              <b>Lorem ipsum dolor sit amet amet amet.</b>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-              mollitia at pariatur ducimus ullam ratione optio fuga in officia
-              harum!
-            </p>
-            <div
-              class="row d-flex justify-content-lg-start justify-content-md-center justify-content-sm-center justify-content-center"
-            >
-              <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                <a
-                  href="https://en.wikipedia.org/wiki/Gray_brocket"
-                  class="btn btn-sm animated-button botonazo"
-                  >Learn more</a
-                >
-              </div>
-            </div>
-          </div>
+          <hr class="style-primary mb-5" />
+          <p class="text-center text-light">Registros de avistamientos en Argentina, Brasil y Uruguay</p>
+        </div>
+        <img
+          src="/img/veadoMap.png"
+          alt="Mapa de avistamientos"
+          class="img-fluid d-none d-sm-block"
+        />
+        <img
+          src="/img/veadoMapSmall.png"
+          alt="Mapa de avistamientos"
+          class="img-fluid d-sm-none"
+        />
+        <div class="text-center text-light">
+          <p>
+            <span style="color: #0000FF;">○</span> 1 registro -
+            <span style="color: #9F00FF;">○</span> 2 o 3 registros -
+            <span style="color: #FF00FF;">○</span> 4 a 10 registros -
+            <span style="color: #FF009F;">○</span> 11 a 50 registros -
+            <span style="color: #FF0000;">○</span> 51 registros en adelante
+            <br />
+            <strong>Ubicaciones</strong>: 105 <br />
+            <h6><i>fuente: ecoregistros.org</i></h6>
+          </p>
         </div>
       </div>
     </section>
-    <!-- end picture section -->
+    <!-- end Map section -->
+
+    <!-- Gallery section -->
+    <section class="section-one d-flex" id="gallery">
+      <div class="container my-5 py-5">
+        <div class="text-center">
+          <h2 class="my-4 section-title">
+            <strong>FOTOS</strong>
+          </h2>
+        </div>
+        <hr class="style-secondary mb-5" />
+        <div class="swiper-container gallery-top img-with-author">
+          <div class="swiper-wrapper">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/11/20/363468/_10A4614.jpg" alt="imagen 1" class="swiper-slide" data-toggle="tooltip" data-placement="right" title="Fotógrafo: Emilio Martin Pérez" data-original-title="Tooltip on right">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/11/18/363017/GFB5104_corzuela_1eco_12-11-19.jpg" alt="imagen 2" class="swiper-slide" data-toggle="tooltip" data-placement="right" title="Fotógrafo: Gustavo Fernando Brahamian" data-original-title="Tooltip on right">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/09/24/352426/FB_IMG_1569325872061.jpg" alt="imagen 3" class="swiper-slide" data-toggle="tooltip" data-placement="right" title="Fotógrafo: Leonardo Caballero" data-original-title="Tooltip on right">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/07/26/343303/_CS_8777.jpg" alt="imagen 4" class="swiper-slide" data-toggle="tooltip" data-placement="right" title="Fotógrafo: Jorge Schlemmer" data-original-title="Tooltip on right">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/07/19/341777/_CS_7804.jpg" alt="imagen 5" class="swiper-slide" data-toggle="tooltip" data-placement="right" title="Fotógrafo: Jorge Schlemmer" data-original-title="Tooltip on right">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/05/24/333827/61458432_1044611099068414_8229077792046710784_n.jpg" alt="imagen 6" class="swiper-slide" data-toggle="tooltip" data-placement="right" title="Fotógrafo: Glauco Oliveira" data-original-title="Tooltip on right">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/05/22/333609/Screenshot_20190522-214848_mh1558572605843.jpg" alt="imagen 7" class="swiper-slide" data-toggle="tooltip" data-placement="right" title="Fotógrafo: Sebastian A. Gómez" data-original-title="Tooltip on right">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2018/10/18/292597/DSC_3859.jpg" alt="imagen 8" class="swiper-slide" data-toggle="tooltip" data-placement="right" title="Fotógrafo: Pablo Alberto Re" data-original-title="Tooltip on right">
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <div class="swiper-container gallery-thumbs">
+          <div class="swiper-wrapper">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/11/20/363468/_10A4614.jpg" alt="imagen 1 mini" class="swiper-slide">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/11/18/363017/GFB5104_corzuela_1eco_12-11-19.jpg" alt="imagen 2 mini" class="swiper-slide">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/09/24/352426/FB_IMG_1569325872061.jpg" alt="imagen 3" class="swiper-slide">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/07/26/343303/_CS_8777.jpg" alt="imagen 4 mini" class="swiper-slide">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/07/19/341777/_CS_7804.jpg" alt="imagen 5 mini" class="swiper-slide">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/05/24/333827/61458432_1044611099068414_8229077792046710784_n.jpg" alt="imagen 6 mini" class="swiper-slide">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2019/05/22/333609/Screenshot_20190522-214848_mh1558572605843.jpg" alt="imagen 7 mini" class="swiper-slide">
+            <img src="http://www.ecoregistros.org/site/images/dataimages/2018/10/18/292597/DSC_3859.jpg" alt="imagen 8 mini" class="swiper-slide">
+          </div>
+        </div>
+        <div class="text-center">
+          <h6 class="my-3"><i>fuente: <a href="http://www.ecoregistros.org/site_br/vermas.php?sp=539&idtiporegistro=1">ecoregistros.org</a></i></h6>
+        </div>
+      </div>
+    </section>
+    <!-- end Gallery section -->
 
     <!-- Video section -->
-    <section class="section-three py-5" id="section3">
-      <div class="container-fluid">
+    <section class="section-three d-flex" id="videos">
+      <div class="container my-5 py-5">
         <div class="row text-center text-light">
-          <div class="col-3"></div>
-          <div class="col-6">
-            <h1 class="py-3">
-              <b>WE <span class="text-success">❤️</span> BROCKETS</b>
-            </h1>
-            <p class="my-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Repellendus mollitia aut dolor eos nesciunt! Exercitationem!
-            </p>
+          <div class="col-12">
+            <div class="text-center">
+              <h2 class="my-4 section-title-white">
+                <strong>VIDEOS</strong>
+              </h2>
+            </div>
+            <hr class="style-tertiary mb-5" />
+            <p class="text-center text-light">Algunas tomas de nuestros amigos cuadrúpedos en su hábitat natural</p>
             <div class="iframe-container">
               <iframe
                 src="https://www.youtube.com/embed/yxmbi3jyuMY?autoplay=1&loop=1&mute=1&rel=0&iv_load_policy=3&playlist=egAgNuw4Sf4,CFyxUH5BEIk"
@@ -232,40 +293,10 @@
 
     <!-- Footer -->
     <footer class="footer navbar-expand-lg navbar-dark bg-dark">
-      <!-- Footer Elements -->
-      <div class="container">
-        <!-- Grid row-->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-12 py-5">
-            <div class="text-center">
-              <!--Linkedin -->
-              <a href="https://ar.linkedin.com/alejandro-cardozo">
-                <i
-                  class="fa fa-linkedin-square fa-lg text-light mr-md-5 mr-3 fa-2x"
-                  aria-hidden="true"
-                >
-                </i>
-              </a>
-              <!--Instagram-->
-              <a href="https://github.com/Alejandro-Cardozo">
-                <i
-                  class="fa fa-github fa-lg text-light mr-md-5 mr-3 fa-2x"
-                  aria-hidden="true"
-                >
-                </i>
-              </a>
-            </div>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row-->
-      </div>
-      <!-- Footer Elements -->
 
       <!-- Copyright -->
       <div class="text-center py-3 copyright">
-        © 2019 Copyright:
+        © 2020 Copyright:
         <a href="http://codefulanito.com" class="text-light">
           codefulanito.com</a
         >
@@ -294,9 +325,9 @@
 
     <!-- Parallax  -->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-    <script>
-      $(".parallax-window").parallax({ imageSrc: "/img/test.JPG" });
-    </script>
+
+    <!-- Gallery JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <!-- Customized JS -->
     <script src="/js/costume.min.js"></script>
